@@ -10,12 +10,12 @@ export class ExpenseService {
 
   // Method to create an expense
   createExpense(expenseData: ExpenseDto) {
-    return `Create an expense with name: ${expenseData.name}, amount: ${expenseData.amount}, date: ${expenseData.date}, category: ${expenseData.category}`;
+    return `Create an expense with name: ${expenseData.description}, amount: ${expenseData.amount}, date: ${expenseData.date}, category: ${expenseData.category}`;
   }
 
   // Method to update an expense
-  updateExpense(id: string) {
-    return `Update an expense with id: ${id}`;
+  updateExpense(description: string) {
+    return `Update an expense with id: ${description}`;
   }
 
   // Method to delete an expense

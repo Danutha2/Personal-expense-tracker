@@ -14,7 +14,7 @@ export class ExpenseEntity {
   description: string;
 
   @Column()
-  amount: string;
+  amount: number;
 
   @Column()
   category: string;

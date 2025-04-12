@@ -29,8 +29,8 @@ export class ExpenseController {
 
   //Endpoint for Update an expense
   @Put('/update-expense')
-  updateExpense(@Param('id') id: string) {
-    const response = this.expenseService.updateExpense(id);
+  updateExpense(@Param('id') id: string, @Body() expenseData: ExpenseDto) {
+    const response = this.expenseService.updateExpense(id, expenseData);
     return response;
   }
 
